@@ -1,0 +1,8 @@
+<app-table
+    [dataSet]="contacts" 
+    itemsLabel="contacts" 
+    [datasetHeader]="tableHeader"
+    (detailsClicked)="onDetailsClick($event)"
+    (deleteClicked)="onDeleteClick($event)"
+    (editClicked)="onEditClick($event)"
+></app-table>

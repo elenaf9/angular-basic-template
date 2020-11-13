@@ -1,0 +1,12 @@
+<header class="header">
+    <div class="branding">
+        <a href="..." class="nav-link">
+            <span class="title">MOCKUP</span>
+        </a>
+    </div>
+    <div class="header-nav">
+        <div *ngFor="let item of navList">
+            <a class="nav-link nav-text" [routerLink]="[item.path]" [routerLinkActive]="['active']">{{item.label}}</a>
+        </div>
+    </div>
+</header>

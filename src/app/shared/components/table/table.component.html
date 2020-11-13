@@ -1,0 +1,20 @@
+<clr-datagrid>
+    <clr-dg-column *ngFor="let item of datasetHeader">{{item.label}}</clr-dg-column>
+    <clr-dg-column></clr-dg-column>
+    <clr-dg-row *ngFor="let data of dataSet">
+        <clr-dg-cell *ngFor="let header of datasetHeader">{{data[header.key]}}</clr-dg-cell>
+        <clr-dg-cell>
+            <div>
+                <button type="button" class="btn btn-icon" aria-label="edit" (click)="detailsClicked.emit(data.id)">
+                    <clr-icon shape="details"></clr-icon>
+                </button>
+                <button type="button" class="btn btn-icon" aria-label="edit" (click)="editClicked.emit(data.id)">
+                    <clr-icon shape="edit"></clr-icon>
+                </button>
+                <button type="button" class="btn btn-icon" aria-label="delete" (click)="deleteClicked.emit(data.id)">
+                    <clr-icon shape="trash"></clr-icon>
+                </button>
+            </div>
+        </clr-dg-cell>
+    </clr-dg-row>
+</clr-datagrid>

@@ -1,0 +1,8 @@
+<div [ngClass]="['clr-' + direction]" class="clr-align-items-end padding-x bar">
+    <div *ngFor="let item of activityList | keyvalue">
+        <button type="button" class="btn btn-icon" attr.aria-label="{{item?.value?.label}}" (click)="onClick(item.key)">
+            <clr-icon shape="home"></clr-icon>
+            <span *ngIf="!item.value.icon">{{item.value.label}}</span>
+        </button>
+    </div>
+</div>

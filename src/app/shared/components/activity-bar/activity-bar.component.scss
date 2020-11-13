@@ -1,0 +1,19 @@
+button {
+    border: 0;
+    margin: 0.5em auto;
+}
+button:hover {
+    background-color: transparent;
+}
+.bar {
+    height: 100%;
+    width: 100%;
+}
+clr-icon {
+    height: 20px;
+    width: 20px;
+    color: lightgray;
+}
+clr-icon:hover {
+    color: white;
+}

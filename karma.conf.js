@@ -16,7 +16,7 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/trafo-mockup'),
+      dir: require('path').join(__dirname, './coverage/angular-mockup'),
       subdir: '.',
       reporters: [
         { type: 'html' },

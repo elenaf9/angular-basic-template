@@ -1,0 +1,48 @@
+<div class="clr-row">
+    <app-activity-bar class="clr-col-0.5 activity-bar" [activityList]="activities"></app-activity-bar>
+    <clr-tree class="padding-y clr-col-1.5">
+        <clr-tree-node [clrExpanded]="true">
+            Action 1
+
+            <clr-tree-node>Action 1.1</clr-tree-node>
+
+            <clr-tree-node>
+                Action 1.2
+                <clr-tree-node>Action 1.2.1</clr-tree-node>
+                <clr-tree-node>Action 1.2.2</clr-tree-node>
+                <clr-tree-node>Action 1.2.3</clr-tree-node>
+                <clr-tree-node>Action 1.2.4</clr-tree-node>
+            </clr-tree-node>
+
+            <clr-tree-node>
+                Action 1.3
+                <clr-tree-node>Action 1.3.1</clr-tree-node>
+                <clr-tree-node>Action 1.3.2</clr-tree-node>
+            </clr-tree-node>
+
+        </clr-tree-node>
+        <clr-tree-node [clrExpanded]="true">
+            Action 2
+
+            <clr-tree-node>
+                Action 2.1
+            </clr-tree-node>
+
+            <clr-tree-node>
+                Action 2.2
+            </clr-tree-node>
+
+        </clr-tree-node>
+    </clr-tree>
+    <div class="clr-col main-container">
+        <div class="heading">
+            <h1>Contacts</h1>
+        </div>
+        <clr-tabs>
+            <clr-tab *ngFor="let item of routes">
+                <button clrTabLink [routerLink]="[item.path]" [routerLinkActive]="['active']">{{item.label}}</button>
+            </clr-tab>
+        </clr-tabs>
+        <router-outlet></router-outlet>
+    </div>
+</div>

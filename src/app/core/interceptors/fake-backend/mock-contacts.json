@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "Contact 1",
+        "type": "group"
+    },
+    {
+        "id": "2",
+        "name": "Contact 2",
+        "type": "group"
+    },
+    {
+        "id": "3",
+        "name": "Contact 3",
+        "type": "person"
+    },
+    {
+        "id": "4",
+        "name": "Contact 4",
+        "type": "group"
+    },
+    {
+        "id": "5",
+        "name": "Contact 5",
+        "type": "person"
+    },
+    {
+        "id": "6",
+        "name": "Contact 6",
+        "type": "person"
+    }
+]
